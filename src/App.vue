@@ -3,7 +3,6 @@
     <header>
       <h1>Nhack</h1>
       <nav>
-        <router-link to="/">Usuários</router-link>
         <router-link to="/restaurants">Restaurantes</router-link>
         <router-link to="/foods">Pratos</router-link>
       </nav>

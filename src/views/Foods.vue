@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="foods">
       <h1>Pratos</h1>
       <div v-for="food in foods" :key="food.id" class="food-card">
         <router-link :to="`/foods/${food.id}`">
@@ -10,29 +10,22 @@
         </router-link>
       </div>
     </div>
-  </template>
-  
-  <script>
-  import axios from "axios";
-  
-  export default {
-    data() {
-      return {
-        foods: [],
-      };
-    },
-    async created() {
-      const response = await axios.get("https://apifakedelivery.vercel.app/foods");
-      this.foods = response.data;
-    },
-  };
-  </script>
-  
-  <style>
-  .food-card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  </style>
-  
+</template>
+
+<script>
+import axios from "axios";
+
+export default {
+  data() {
+    return {
+      foods: [],
+    };
+  },
+  async created() {
+    const response = await axios.get("https://apifakedelivery.vercel.app/foods");
+    this.foods = response.data;
+  },
+};
+</script>
+
+<style src="@/styles/Foods.css"></style>

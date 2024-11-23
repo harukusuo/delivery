@@ -1,6 +1,5 @@
-
 <template>
-  <div>
+  <div class="food-detail">
     <h1>{{ food.name }}</h1>
     <img :src="food.image" alt="Imagem do prato" />
     <p><strong>Preço:</strong> R$ {{ food.price }}</p>
@@ -27,3 +26,5 @@ export default {
   },
 };
 </script>
+
+<style src="@/styles/FoodDetail.css"></style>

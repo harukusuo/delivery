@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="restaurants">
       <h1>Restaurantes</h1>
       <div v-for="restaurant in restaurants" :key="restaurant.id" class="restaurant-card">
         <router-link :to="`/restaurants/${restaurant.id}`">
@@ -35,4 +35,5 @@
     margin-bottom: 20px;
   }
   </style>
-  
+
+<style src="@/styles/Restaurants.css"></style>

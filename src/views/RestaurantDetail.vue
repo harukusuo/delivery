@@ -1,6 +1,5 @@
-
 <template>
-  <div>
+  <div class="restaurant-detail">
     <h1>{{ restaurant.name }}</h1>
     <img :src="restaurant.image" alt="Imagem do restaurante" />
     <p><strong>Nota:</strong> {{ restaurant.rating }}</p>
@@ -24,3 +23,5 @@ export default {
   },
 };
 </script>
+
+<style src="@/styles/RestaurantDetail.css"></style>

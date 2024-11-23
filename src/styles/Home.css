@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /* Importar fonte Poppins */
+
+body {
+  font-family: 'Poppins', sans-serif; /* Aplicar a fonte Poppins ao site inteiro */
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  margin: 0;
+}
+
+.background {
+  background-image: url('../assets/background.jpg');  
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.content-box {
+  background-color: #ff6347;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumentar o sombreado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Adicionar espaço abaixo do quadrado */
+}
+
+.logo-container {
+  background-color: white;
+  border-radius: 50%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.welcome-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.spacer {
+  height: 20px; /* Espaço abaixo do quadrado laranja */
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.login-button:hover {
+  background-color: #ff4500;
+}
