@@ -1,62 +1,34 @@
 <template>
-  <div id="app">
-    <header>
-      <h1>Nhack</h1>
-      <nav>
-        <router-link to="/restaurants">Restaurantes</router-link>
-        <router-link to="/foods">Pratos</router-link>
-      </nav>
+  <div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-red-600 text-white py-4">
+      <div class="container mx-auto flex justify-between items-center max-w-screen-md">
+        <h1 class="text-xl font-bold">Nhack Delivery</h1>
+        <nav>
+          <router-link to="/" class="text-gray-300 hover:text-white mx-2">Home</router-link>
+          <router-link to="/cart" class="text-gray-300 hover:text-white mx-2">Carrinho</router-link>
+        </nav>
+      </div>
     </header>
-    <main>
-      <router-view></router-view>
+
+    <!-- Main Content -->
+    <main class="flex flex-1 container mx-auto py-6 max-w-screen-md">
+      <router-view />
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-red-600 text-gray-300 py-4">
+      <div class="container mx-auto text-center">
+        &copy; 2024 Nhack Delivery. Todos os direitos reservados.
+      </div>
+    </footer>
   </div>
 </template>
 
-<script>
-export default {
-  name: "App",
-};
+<script lang="ts" setup>
+// No special logic is required here for the basic layout
 </script>
 
-<style>
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-header {
-  background-color: #ff6347;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  padding: 20px;
-}
+<style scoped>
+/* Scoped styles if needed */
 </style>
