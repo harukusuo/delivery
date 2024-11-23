@@ -31,6 +31,6 @@ onMounted(async () => {
 });
 
 const addToCart = (food: Food | null) => {
-    if (food) cartStore.addToCart({ id: food.id, name: food.name, price: food.price });
+    if (food) cartStore.addToCart({ id: food.id, name: food.name, price: food.priceRaw });
 };
 </script>
