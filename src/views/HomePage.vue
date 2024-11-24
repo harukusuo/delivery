@@ -2,7 +2,7 @@
     <div>
         <h1 class="text-2xl font-bold mb-4">Restaurantes</h1>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            <div v-for="restaurant in restaurants" :key="restaurant.id" class="flex flex-col">
+            <div v-for="restaurant in restaurants" :key="restaurant.id" class="flex flex-col shadow-lg transform transition-transform duration-300 hover:scale-105">
                 <img :src="restaurant.image" alt="restaurant.name" class="" />
                 <h2 class="text-red-600 font-bold">{{ restaurant.name }}</h2>
                 <p>{{ restaurant.description }}</p>
@@ -11,7 +11,7 @@
         </div>
         <h1 class="text-2xl font-bold mt-8 mb-4">Recomendados</h1>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div v-for="food in recommendedFoods" :key="food.id" class="flex flex-col">
+            <div v-for="food in recommendedFoods" :key="food.id" class="flex flex-col shadow-lg transform transition-transform duration-300 hover:scale-105">
                 <img :src="food.image" alt="food.name" class="max-h-32 object-cover" />
                 <h2 class="text-red-600 font-bold">{{ food.name }}</h2>
                 <p>R$ {{ food.price }}</p>

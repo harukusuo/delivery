@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-1 flex-col items-center justify-center m-auto">
+  <div class="flex flex-1 flex-col items-center justify-center m-auto h-screen bg-cover bg-center">
     <h1 class="text-3xl font-bold mb-6">Entrar</h1>
     <form class="flex flex-col items-center space-y-4 w-1/3">
       <input type="email" placeholder="Email" class="input border border-gray-300 rounded-full px-4" v-model="email" />
@@ -22,3 +22,15 @@ const login = () => {
   router.push('/home');
 };
 </script>
+
+<style scoped>
+body {
+  margin: 0;
+  overflow: hidden;
+}
+.bg-cover {
+  background-image: url('@/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+</style>

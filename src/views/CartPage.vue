@@ -12,7 +12,7 @@
             <h3 class="text-lg">{{ item.name }}</h3>
             <p>R$ {{ item.price }} x {{ item.quantity }}</p>
           </div>
-          <button @click="removeFromCart(item.id)" class="text-neutral-950 hover:text-red-600">Remover</button>
+          <button @click="removeFromCart(item.id)" class="text-neutral-950 hover:text-red-600 ml-4">Remover</button>
         </div>
         <p class="text-lg font-bold mt-6">Total: R$ {{ totalPrice }}</p>
       </div>
@@ -30,4 +30,3 @@
     cartStore.removeFromCart(id);
   };
   </script>
-  
