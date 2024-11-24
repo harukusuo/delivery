@@ -12,7 +12,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="flex flex-1 container mx-auto py-6 max-w-screen-md">
+    <main class="flex flex-1 container mx-auto py-6 max-w-screen-md px-1 md:px-0">
       <router-view />
     </main>
 
@@ -26,9 +26,9 @@
 </template>
 
 <script lang="ts" setup>
-// No special logic is required here for the basic layout
+
 </script>
 
 <style scoped>
-/* Scoped styles if needed */
+
 </style>
